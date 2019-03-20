@@ -1,0 +1,20 @@
+{
+  "name": "generator-barebones-rest-api",
+  "version": "0.1.0",
+  "description": "Barebones REST API made with Express. Basic scaffolding with nothing special to it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo no test scrip present"
+  },
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^1.0.0"
+  },
+  "author": "Oleg Lindvin",
+  "license": "ISC"
+}
