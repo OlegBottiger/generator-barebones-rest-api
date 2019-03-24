@@ -13,10 +13,20 @@ module.exports = class extends Generator {
       '_gitignore',
       '_env',
       'server.js',
-      'db/index.js',
-      'lib/index.js',
-      'routes/health.js'
+      'src/db/index.js',
+      'src/app.js',
+      'src/routes/health.js'
     ];
+
+    structure.forEach((filename) => {
+      this.fs.copyTpl(
+        this.templatePath(filename),
+        this.destinationPath(filename.replace(/^_/, '.')),
+        {
+          title: pkgJson.name,
+        }
+      );
+    });
   }
 
   install() {
@@ -25,7 +35,8 @@ module.exports = class extends Generator {
       'dotenv',
       'express',
       'cors',
-      'nodemon'
+      'nodemon',
+      'http-graceful-shutdown'
     ])
   }
 }
