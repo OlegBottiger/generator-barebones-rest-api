@@ -13,8 +13,12 @@
     "yeoman-generator"
   ],
   "dependencies": {
-    "yeoman-generator": "^1.0.0"
+    "yeoman-generator": "^3.1.1"
   },
   "author": "Oleg Lindvin",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlegLindvin/generator-barebones-rest-api.git"
+  }
 }

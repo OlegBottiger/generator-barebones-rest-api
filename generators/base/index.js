@@ -37,6 +37,6 @@ module.exports = class extends Generator {
       'cors',
       'nodemon',
       'http-graceful-shutdown'
-    ])
+    ], { 'save-dev': true });
   }
 }
